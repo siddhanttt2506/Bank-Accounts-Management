@@ -1,51 +1,53 @@
 # Bank Accounts Management
 
-This project is a backend-only bank account management system using Python and PostgreSQL.  
-All interactions are via the command line and SQL scripts.
+This project is a command-line based bank account management system using Python and PostgreSQL.
 
 ## Features
 
-- Manage bank accounts using a Python CLI (`bank.py`)
-- PostgreSQL database schema and sample data provided
-- SQL scripts for database setup and operations
-
-## Setup
-
-### 1. Database
-
-1. Install PostgreSQL on your machine.
-2. Create the database and tables:
-   ```sh
-   psql -U <your_username> -f bank_accounts_management_DB.sql
-   psql -U <your_username> -f src/BAMS_Schema.sql
-   ```
-   *(Replace `<your_username>` with your PostgreSQL username)*
-
-3. (Optional) Run additional SQL scripts in `src/` for more features or sample data.
-
-### 2. Python CLI
-
-1. Make sure you have Python 3 installed.
-2. Run the CLI:
-   ```sh
-   python bank.py
-   ```
-   Follow the prompts to manage accounts.
-
-## File Structure
-
-- `bank.py` — Python CLI for bank operations
-- `models.py` — ORM models (optional, for advanced usage)
-- `bank_accounts_management_DB.sql` — Main database creation script
-- `src/` — Additional SQL scripts (schema, sample data, user registration, etc.)
-
-## Usage
-
-- Use the CLI for account management.
-- Use SQL scripts for database setup and direct SQL queries.
+- Manage bank accounts via a Python command-line interface (CLI).
+- Uses SQLAlchemy for object-relational mapping (ORM).
+- Includes SQL scripts for complete database and schema setup.
 
 ## Requirements
 
 - Python 3.x
 - PostgreSQL
+- Dependencies listed in `requirements.txt`
 
+## Setup
+
+1.  **Install PostgreSQL** on your system if you haven't already.
+
+2.  **Set up the database** by running the provided SQL scripts. You will need to create the initial database first.
+    ```sh
+    # Connect to psql and create the database
+    psql -U <your_username>
+    CREATE DATABASE bank_management;
+    \q
+
+    # Run the schema scripts
+    psql -U <your_username> -d bank_management -f src/BAMS_Schema.sql
+    ```
+    *(Replace `<your_username>` with your PostgreSQL username)*
+
+3.  **Install Python dependencies:**
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+Run the main application from your terminal:
+
+```sh
+python bank.py
+```
+
+Follow the on-screen prompts to interact with the banking system.
+
+## File Structure
+
+-   `bank.py`: The main CLI application entry point.
+-   `models.py`: Defines the database tables using SQLAlchemy ORM.
+-   `src/BAMS_Schema.sql`: SQL script to create tables and seed data.
+-   `requirements.txt`: A list of Python package dependencies.
