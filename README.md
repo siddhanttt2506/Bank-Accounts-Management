@@ -1,7 +1,7 @@
 # Bank Accounts Management
 
 This project is a backend-only bank account management system using Python and PostgreSQL.  
-**No frontend or web deployment is included.** All interactions are via the command line and SQL scripts.
+All interactions are via the command line and SQL scripts.
 
 ## Features
 
@@ -41,8 +41,6 @@ This project is a backend-only bank account management system using Python and P
 
 ## Usage
 
-- **All operations are performed via the terminal.**
-- **No web interface or frontend is included.**
 - Use the CLI for account management.
 - Use SQL scripts for database setup and direct SQL queries.
 
