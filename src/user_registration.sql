@@ -1,7 +1,4 @@
-/* Bank Accounts Management System
-user_registration
-© 2023 Tushar Aggarwal. All rights reserved.
-*/
+s
 
 /*Creating the "Users" table:*/
 CREATE TABLE Users (

@@ -1,8 +1,5 @@
 -- Active: 1686788664084@@127.0.0.1@5432@bank_accounts_management_systems
-/* Bank Accounts Management System
-Schema & Tables
-© 2023 Tushar Aggarwal. All rights reserved.
-*/
+
 CREATE DATABASE bank_accounts_management_systems;
 
 /* ======================= TABLES ========================*/
