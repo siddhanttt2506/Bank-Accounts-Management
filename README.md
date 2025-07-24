@@ -51,3 +51,9 @@ Follow the on-screen prompts to interact with the banking system.
 -   `models.py`: Defines the database tables using SQLAlchemy ORM.
 -   `src/BAMS_Schema.sql`: SQL script to create tables and seed data.
 -   `requirements.txt`: A list of Python package dependencies.
+
+## Contributors
+
+- Ayushman Daruka
+- Mrinal Chaturvedi
+- Siddhant Shekhar
